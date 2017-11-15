@@ -3,20 +3,29 @@ body,html {
 }
 
 body {
-  font-family: Futura, Arial, sans-serif;
+  font-family: "Martel Sans", Arial, sans-serif;
   margin: 0px auto;
   font-size: 14;
-  color: #666666;
+  /*color: #666666;*/
 }
 
-.sidebar {
-  background-color: teal;
+.sidebar h2 {
+  /*background-color: teal;*/
+  font-family: "arial", serif;
+  font-size: 1.5em;
+  color: black;
 }
-h2 {
-  color: #fff;
+
+header h1 {
+  font-size: 2em;
+  line-height: 1;
+  font-family: "Playfair Display", serif;
+  text-align:center;
 }
+
+
 .main {
-  background-color: pink;
+  /*background-color: pink;*/
   width: 100%;
 }
 
@@ -47,6 +56,13 @@ h2 {
 
 .dropdownitem {
   display:none;
+}
+
+.arrow {
+    width: 17px;
+    height: 11px;
+    float: right;
+    margin-top: 5px;
 }
 
 @media (min-width: 620px) {
