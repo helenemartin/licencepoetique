@@ -22,7 +22,7 @@ h1 {
   font-size: 2.1em;
   line-height: 2;
   font-weight: bold;
-  font-family: 'Abril Fatface', cursive;
+  font-family: 'Abril Fatface', Century, serif;
   text-align:center;
   text-orientation: initial;
   writing-mode: horizontal-rl;
@@ -138,7 +138,12 @@ i.fas.fa-volume-up {
     height: 200px;
   }
   #playbtn {
-  visibility: visible;
+    visibility: visible;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    /* margin: 3px; */
+    font-size: 1em;
   }
 
 }
