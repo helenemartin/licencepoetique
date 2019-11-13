@@ -42,10 +42,11 @@ h1 {
 
 }
 
-#textarea {
-  width:200px;
+textarea {
+  /*width:200px;
   height:200px;
-  margin: -1000px; 
+  margin: -1000px; */
+  display: none;
 }
 
 .main {

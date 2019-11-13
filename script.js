@@ -3,9 +3,11 @@ var utterance = new SpeechSynthesisUtterance();
 var lang = ['en-UK', 'fr-FR', 'nl-BE', 'it-IT', 'da-BK', 'fr-BE'];
 utterance.rate = 1;
 
+console.log(document.getElementsByTagName('button'));
 
-document.getElementById('playbtn').onclick = function(){
-    var text = document.getElementById('textarea').value;
+
+function clickButtons(e){
+    var text = document.getElementById(this.dataset.textarea).value;
     utterance.text = text;
     var langIndex = Math.floor(Math.random() * lang.length);
     utterance.lang = lang[langIndex];
@@ -13,10 +15,15 @@ document.getElementById('playbtn').onclick = function(){
     speechSynthesis.speak(utterance);
 };
 
+//on press button want to be able to read this one.
+ //pass a parameter to a function
+ // create a function getElementByClass
 
-//responsiveVoice.OnVoiceReady = function (){
-    // function choseVoice() {
-    //     var voices = ["Australian Female", "Australian Male", "UK English Male", "Uk English Female"];
-    //     var voiceIndex = Math.floor(Math.random() * voices.length);
-    //     return voices[voiceIndex];
-    // }
+ 
+
+  var everyButton = document.getElementsByTagName('button');
+  for( var i=0,il = everyButton.length; i< il; i ++ ){
+  everyButton[i].onclick = clickButtons;
+  }
+
+      
