@@ -14,16 +14,10 @@ function clickButtons(e){
     console.log(lang[langIndex])
     speechSynthesis.speak(utterance);
 };
-
-//on press button want to be able to read this one.
- //pass a parameter to a function
- // create a function getElementByClass
-
  
-
-  var everyButton = document.getElementsByTagName('button');
+var everyButton = document.getElementsByTagName('button');
   for( var i=0,il = everyButton.length; i< il; i ++ ){
   everyButton[i].onclick = clickButtons;
-  }
+}
 
       
